@@ -12,7 +12,7 @@ library PriceConverter {
         // https://docs.chain.link/data-feeds/price-feeds/addresses
         (, int256 answer, , , ) = priceFeed.latestRoundData();
         // ETH/USD rate in 18 digit
-        return uint256(answer * 10000000000);
+        return uint256(answer * 1e10);
     }
 
     // 1000000000
